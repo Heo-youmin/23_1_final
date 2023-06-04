@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BREEDING❋PLANTS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<style>
+		@keyframes blink {0% { opacity: 1; }50% { opacity: 0; }100% { opacity: 1; }}
+		body{background-color: black; overflow-x: hidden; scroll-behavior: smooth; scroll-behavior: smooth;}
+		h1,h2,h3,h4{color: #00ea00;}
+		h1{font-size: 3rem; font-weight: 500; margin-top: 1rem; margin-bottom: 1rem;}
+		h2{font-size: 2rem; font-weight: 300;}
+		h4{font-size: 2rem; font-weight: 300;}
+		.content h1{font-size: 4rem; p;}
+		.content h2{word-break: keep-all; line-height: 3rem; width: 1200px; text-align: center; margin:100px 150px 0 150px;}
+		footer{padding-top: 20px; background-color: #383838;}
+		.wrap{width: 1400px; margin: auto; padding: 50px; padding-top: 0; }
+		.flex{display: flex;}
+		.between{justify-content: space-between;}
+		.line {border-top: 2px solid #00ea00;}
+		.profit{padding: 0 50px 0 50px;}
+		.profit h1{font-size: 4rem; line-height: 5rem; text-align: left; font-weight: 400;padding: 100px 50px 100px 50px; margin: auto;}
+		.profit p{width: 1100px; padding: -500px; opacity: 1; font-size: 2rem; word-break: keep-all; font-weight: 300; text-align: center; opacity: 0; margin: auto; margin-top: -200px;}
+		.profit img{width:600px;}
+		.fillbox{background-color: #00ea00; border-radius: 20px; padding: 50px 50px 50px 50px;}
+		.fillbox h1{color: black; font-size: 4rem; line-height: 5rem; margin: 80px 0 80px 0; }
+		.fillbox-b:hover{transition: 1s; border-radius: 20px; color: black; background-color: #00ea00; padding-bottom:100px; }
+		.fillbox-b:hover img{opacity: 0}
+		.fillbox-b:hover p{opacity: 1}
+		.before-after{padding: 0 50px 0 50px;}
+		.before-after h1{margin-bottom: 2rem;}
+		.before-after h2{line-height: 3rem;}
+		.changebox{opacity: 0.5; text-align: center} 
+		.changebox:hover{opacity: 1}
+		.changebox img{width: 60%}
+		.newbox {width: 1300px; background-color: #00ea00; border-radius: 20px;}
+		.newbox h1{color: black; font-size:10rem;}
+		.newbox h2{color: black; font-size: 3.5rem;}
+		.ticker{background: #00ea00; height: 2rem; overflow: hidden; width: 1400px; color: black; margin-bottom: 50px;}
+		.box{padding-left: 10px; padding-right: 10px; height: 100px; border-radius: 20px;background-color: #00ea00; width: 380px; padding-top: 10px;}
+		.box h1{color: black; margin-top: 5px;}
+		.box h2{color: black; font-size:1rem; margin-top:-20px; line-height:40px }
+		.curry{overflow-x: scroll; white-space: nowrap;}
+		.curry img{display: inline-block; height: auto; margin-right: 10px;}
+		.curry::-webkit-scrollbar-thumb{background-color: black; border-radius: 20px;}
+		.curry::-webkit-scrollbar {background-color: #00ea00; border-radius: 20px;}
+		.curry2{overflow-y: auto; overflow-x: hidden; white-space: nowrap;}
+		.curry2 img{display: inline-block; margin-right: 10px; height: auto;}
+		.curry2::-webkit-scrollbar {background-color: black; border-radius: 20px; width: 15px;}
+		.curry2::-webkit-scrollbar-thumb{background-color: #00ea00; border-radius: 20px;}
+		.curry2box{height: 740px;}
+		.curry2box h1,.curry2box h2{color: #00ea00; text-align: center;}
+		.column{display: flex; flex-direction: column; justify-content: space-between;}
+		.green-R{text-align: center}
+		.green-RR{margin: 0 100px 0 100px; padding: 100px; width: 1100px; height: 1750px; line-height: 3.5rem; text-align: left; word-break: keep-all; background-image:url("final.png");background-size: cover;}
+		.green-RR{display: flex; justify-content: center; align-items: center}
+
+		.blinking-text {animation: blink 1s infinite;}
+		.green-wrap{width: 1500px; margin: auto; padding: 50px; padding-top: 0; position: relative; overflow: hidden;}
+		.green-wrap::before {content: "";position: absolute;top: 0;left: 1; width: 1500px; height: 780px; z-index: -1;}
+		.green-wrap::before {background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDgwYjczN2U4ZjRiYjUwMjJjNWE5NjAyNDk0MzIxNmE0NzAyYjgxZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/U2RJ8AkYawHEgwqMg6/giphy.gif");background-size: contain; background-position: center; background-repeat: no-repeat;}
+		.green-R {position: relative; max-height: 780px; z-index: 1; overflow: auto;}h1, h2 {margin: 0;}
+		.green-R::-webkit-scrollbar{width: 0rem;}
+		.green-R::-webkit-scrollbar-track{background: transparent;}
+		.green-R::-webkit-scrollbar-thumb{background: transparent;}
+
+		.content {padding: 400px 0px 100px 0px; word-break: keep-all;}
+		.container{margin-top: 50px; flex-wrap: wrap;}
+		.first {background-image: url("https://media.giphy.com/media/xdkXW7Scx6gus/giphy.gif");background-size: cover;background-position: center;background-repeat: no-repeat; padding: 50px;}
+		.back1{background-image:url("Back1.jpg");background-size: cover; opacity: 0.2}
+		.back2{background-image:url("Back2.jpg");background-size: cover; opacity: 0.2x}
+		.babox{padding: 80px;}
+		.babox h1{font-size:4.5rem;text-align:left; }
+		.babox h2{font-size: 1rem;text-align: left; word-break: keep-all; line-height: 1.5rem;}
+		.babox2{padding: 80px;}
+		.babox2 h1{font-size:4.5rem;text-align:left; color:black; }
+		.babox2 h2{font-size: 1rem;text-align: left;word-break: keep-all; line-height: 1.5rem; color: black;}
+	</style>
+</head>
+<body>
+	<section class="wrap">
+		<div class="first">
+			<div class="flex between">
+				<div class="column">
+					<div>
+						<h1>품종개량:[Breeding}</h1>
+						<h2>넓은 의미로는 육종.<br>품종:품종의 특성을 개량하는 것<br>육종:새로운 농작물이나 가축을 개발</h2>
+					</div>
+					<div>
+						<h2>품종 개량에 대한 간단한 설명<br>A brief description of the breeding</h2>
+					</div>
+				</div>
+				<div>
+					<div class="box ">
+						<h1>INFO +</h1>
+						<h2>아래로 스크롤을 내려보세요!</h2>
+					</div>
+					<div class="curry2 curry2box">
+						<img src="info.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrap">
+		<div class="flex between fillbox">
+			<h1>품종개량을 하면<br>어떤 장점이 있나요?</h1>
+		</div>
+		<div class="profit">
+				<div class="flex fillbox-b container">
+					<img src="P1.png">
+					<h1>1.생산성 향상</h1>
+					<p> 품종개량은 농산물의 수확량과 생산성을 향상시키는 데 중요한 역할을 합니다. 농업 생산성의 향상은 식량 안보를 강화하고, 인구 증가와 급격한 도시화에 대한 대비책을 마련하는 데 도움이 됩니다.</p>
+				</div>	
+				<div class="flex fillbox-b container">
+					<img src="P2.png">
+					<h1>2.내성 강화</h1>
+					<p>품종개량은 재배작물의 내성을 강화시키는 데 도움을 줍니다. 이는 새로운 병해충에 대한 저항성이나 극한 기상 조건에서의 생존력을 향상시키는 등 다양한 장점을 가져올 수 있습니다.</p>
+				</div>	
+				<div class="flex fillbox-b container">
+					<img src="P3.png">
+					<h1>3.품질 개선</h1>
+					<p>품종개량은 농산물의 품질을 개선시키는 데 도움을 줍니다. 예를 들어, 맛과 향이 더욱 풍부해지거나, 보존 기간이 더욱 길어지는 등의 장점을 가져올 수 있습니다.</p>
+				</div>	
+				<div class="flex fillbox-b container">
+					<img src="P4.png">
+					<h1>4.경제적 이점</h1>
+					<p>품종개량은 농산물 생산과 유통을 효율적으로 할 수 있게 하여, 경제적 이점을 가져올 수 있습니다. 예를 들어, 고가의 수입작물을 대체할 수 있고, 수출 시장을 확대할 수 있습니다.</p>
+				</div>	
+				<div class="flex fillbox-b container">
+					<img src="P5.png">
+					<h1>5.지속 가능한 농업</h1>
+					<p>품종개량은 더욱 지속 가능한 농업을 위한 기반을 마련하는 데 도움을 줍니다. 이는 농업의 환경 친화성, 재생 가능 에너지 사용, 그리고 대기오염, 수질 오염, 토양 오염 등을 줄이는 데 도움이 됩니다.</p>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<section class="wrap">
+		<h2 class="ticker"  data-speed="1" data-gap="0"><p><span>품종개량 전후 비교 Comparison before &after breeding 품종개량 전후 비교 Comparison before &after breeding</span></p></h2>
+		<div class="before-after">
+			<h1>식물 품종개량 전후 비교</h1>
+			<h2>미국 식품안정청에 따르면 마트에서 파는 작물의 70%는<br>
+				유전자 조작/ 품종개량이 이루어진 결과물이라고 합니다.<br>
+				우리에게 익숙한 과일, 곡물들에게도 숨겨진 본모습이 있다고 하는데<br>
+				충격적인 원래의 모습을 살펴볼까요?<br><br>
+			</h2>
+			<div class="flex between">
+				<div class="changebox">
+					<a href="#n1"><img src="new1.png" style="width: 100%;"></a>
+					<h1>수박</h1>
+				</div>
+				<div class="changebox">
+					<a href="#n2"><img src="new2.png" style="width: 100%;"></a>
+					<h1>바나나</h1>
+				</div>
+				<div class="changebox">
+					<a href="#n3"><img src="new3.png" style="width: 100%;"></a>
+					<h1>당근</h1>
+				</div>
+				<div class="changebox">
+					<a href="#n4"><img src="new4.png" style="width: 100%;"></a>
+					<h1>가지</h1>
+				</div>
+				<div class="changebox">
+					<a href="#n5"><img src="new5.png" style="width: 100%;"></a>
+					<h1>옥수수</h1>
+				</div>
+				<div class="changebox">
+					<a href="#n6"><img src="new6.png" style="width: 100%;"></a>
+					<h1>감자</h1>
+				</div>
+			</div>
+			<div>
+				<div class="changebox back1 flex" id="n1">
+					<div class="babox column">
+						<h1>징그러운<br>소용돌이<br>수박!</h1>
+						<h2>17세기에 그려진 그림을 보면, 
+						당시 수박의 속은 작은 6개의 삼각형이 소용돌이를 그리고 있어 
+						빨간 과육 부분이 큰 지금의 수박과는 사뭇 다른 모습이다. 
+						17세기 이후 붉은 색 '리코펜' 성분을 보충해 색을 빨갛게 하는 방향으로 개량했고 
+						동시에 수분은 많아졌으며 씨앗도 적어졌다. 
+						최근까지도 재배 방식의 변화, 교배 등을 통해 수박의 씨를 없애고
+						당도를 높이는 품종 개량은 계속되고 있다. </h2>
+					</div>
+					<img src="W1.png">
+				</div>
+				<div class="changebox back2 flex" id="n2">
+					<div class="babox2 column">
+						<h1>씨가 많고<br> 퍽퍽한<br> 바나나?</h1>
+						<h2>바나나는 7000년 이전부터 수학되어 왔는데,
+						당시의 모습은 씨의 크기가 굵고 굵은데다 식감도 빽빽해 먹기 좋은 과일이 아니었다.
+						수백년에 걸친 접붙이와 교배를 통해 질병에 강하고 강풍에 잘버텨 재배가 용이하며,
+						씨의 크기와 갯수가 줄어들어 먹기좋은 현재의 바나나가 탄생했다.</h2>
+					</div>
+					<img src="W2.png">
+				</div>
+				<div class="changebox back1 flex" id="n3">
+					<div class="babox column">
+						<h1>먹을 것이<br>하나 없는<br>당근!</h1>
+						<h2>대표적인 주황색 야채 당근은 원래 보라색으로 이루어져 있었고, 
+						흰색과 주황색이 돌연변이로 나오는 품종이었다고 한다. 
+						보라색 당근은 익으면 갈색으로 더 볼품없이 변했다고.
+						하지만 17세기 네덜란드의 원예 학자들이 단맛이 더 나는 
+						오렌지색 당근을 만들어내면서, 가정용 당근으로 품종 개량을 거쳐 
+						지금의 당근이 되었다고 한다</h2>
+					</div>
+					<img src="W3.png">
+				</div>
+				<div class="changebox back2 flex" id="n4">
+					<div class="babox2 column">
+						<h1>짤막한<br>방울 모양<br>가지?</h1>
+						<h2>가지가 영어로 eggplant라고 불리는 데는 품종개량 전 모습과 관련이 있다.꼭 계란처럼 보이는 작고 동그란 형태의 열매의 모습을 하고 있었기 때문.
+						또한 원래의 가지는 흰색, 하늘색, 보라색, 노란색 등의 다양한 색상을 가지고 있었고, 
+						떫은 맛이 나는 솔라닌이라는 독소가 포함되어 있어 독성 식물로 분류되었다고 한다. </h2>
+					</div>
+					<img src="W4.png">
+				</div>
+				<div class="changebox back1 flex" id="n5">
+					<div class="babox column">
+						<h1>작고<br>보잘 것 없는<br>옥수수!</h1>
+						<h2>옥수수가 품종개량되기 전에는 
+						알갱이가 매우 적어 먹을 부분이 거의 없을 정도였다. 
+						'테오신테'라는 품종의 옥수수는 
+						강아지풀과 비슷하게 생겼을 뿐만 아니라 
+						강아지풀과 같이 잡초로 불렸다고. 
+						현재의 옥수수는 약 9천 년 전보다 약 1천 배나 커진 크기라고 하는데, 
+						최근에는 친환경 제품의 원료로도 사용되며 인류의 역사를 바꾼 작물이라는 평을 받고 있다.</h2>
+					</div>
+					<img src="W5.png">
+				</div>
+				<div class="changebox back2 flex" id="n6">
+					<div class="babox2 column">
+						<h1>먹으면<br>안될 것 같은<br>감자!</h1>
+						<h2>남아메리카 안데스 산맥의 작물로 
+						기원전 3천년 전부터 재배되어왔는데
+						초기엔 보라색, 주황색 등의 색깔이라
+						악마의 작물이라는 소문도 있었지만 맛이 좋았다고 합니다. 
+						지금은 품종개량이 되어 현재의 감자가 되었고 
+						야생 감자에서 치명적인 독성을 나타낸 솔라닌을 제거한 잉카의 
+						전통적 육종에 의해 개발된 것이 주를 이루고 있다고 합니다.
+						</h2>
+					</div>
+					<img src="W6.png">
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="wrap newbox">
+		<div class=" blinking-text flex">
+			<div><h1 style="margin-top: 20px;">NEW!</h1></div>
+			<div><h2 style="margin-top: 40px;">새롭게 주목받는 <br>이색 품종개량 과일</h2></div>
+		</div>
+		<div class="curry">
+			<img src="newlist.png">
+		</div>
+	</section>
+	<section class="green-wrap">
+		<div class="green-R">
+			<img src="green-R.png" style="padding-top: 266.5px;">
+			<div class="content">
+				<h1>[녹색 혁명]</h1>
+				<h2>녹색 혁명(綠色革命, 영어: Green Revolution)은 농업 분야에서,
+				품종개량 등 새로운 농업기술의 도입으로 많은 수확을 올리는 농업상의 모든 개혁을 이르는 말.특히 1960년대 개발 도상국에서 일어난, 농작물의 대량생산으로 인한 비약적인 식량 생산력의 증대를 설명한다.
+				1944년 미국의 지원을 받아 멕시코에서 밀 생산량이 획기적으로 증가한 것이 그 시초이며,1960년대 이후 미국을 중심으로, 품종개량 등의 관련 연구가 활발히 진행되고,식량 부족에 직면한 개발 도상국들이 적극적으로 이 기술을 도입하면서 세계적으로 농업 생산량이 획기적으로 증가하게 되었다.<br><br>
+				이 변화는 농업 생산량의 증가를 가져온 동시에 많은 관개 시설의 확장, 잡종 씨앗의 배포, 화학 비료 및 농약의 사용 확대를 가져왔다.</h2>
+			</div>
+		</div>
+	</section>
+	<section class="wrap">
+		<div class="green-RR">
+			<h4>품종개량은 미래의 농업과 식량 생산에 핵심적인 역할을 맡을 것으로 기대됩니다. 지속적인 인구 증가와 기후 변화로 인해 식량 안보와 농업의 지속 가능성은 점점 중요해지고 있습니다.이에 따라 품종개량은 더욱 많은 관심을 받을 것으로 예상됩니다.<br><br>
+			첨단 유전체 분석, 유전자 조작, 빅데이터, 인공지능과의 융합을 통해 품종개량은 더욱 정교하고 효율적인 방식으로 이루어질 것입니다. 이를 통해 적응력 있는 작물과 환경 친화적인 재배 방법, 개인 맞춤형 식품 등이 개발될 것입니다.또한, 소비자들의 건강과 안전에 대한 요구를 충족시킬 수 있는 자연적인 개량 방법도 연구될 것입니다.<br><br>
+
+			품종개량은 식량 안보와 농업의 지속 가능성을 위한 핵심적인 요소로서 미래에 더욱 중요한 역할을 맡을 것입니다. 많은  관심과 지원이 필요한 분야이며, 우리의 식탁에 안전하고 풍요로운 식량을 공급하기 위해 품종개량에 대한 관심을  높여주시기 바랍니다!
+			</h4>
+		</div>
+		<div class="line"></div>
+	</section>
+	<footer>
+		
+	</footer>
+
+	<script src="wow.js"></script>
+    <script>new WOW().init();</script>
+    <script type="text/javascript">
+        bhTicker("ticker",2);
+
+function bhTicker(cl,speed) {
+        let t = document.getElementsByClassName(cl);
+        let ta = []; let ts=[]; let tg=[]; let tw=[];
+        let container,mover,text,textWidth;
+
+        for(let i=0; i<t.length; i++){
+                container = t[i];
+                mover = container.getElementsByTagName("p").item(0);
+                text = mover.getElementsByTagName("span").item(0);
+
+                // set
+                mover.style.position = "absolute";
+                mover.style.margin = "0 0 0 0";
+                mover.style.left = "0px";
+                mover.leftPosition = 0;
+                mover.style.width = text.childNodes.item(0).length + "em";        // stretch width
+                textWidth = text.offsetWidth;
+
+                let speed2 = t[i].dataset.speed;
+                if (textWidth > container.offsetWidth) {
+                        if(speed2 == 1){speed2 = 2};
+                        mover.style.width = textWidth * speed2 + "px";
+                        
+                        for(let k=0;k<speed2;k++){
+                                mover.innerHTML += mover.innerHTML;        
+                        }
+                }
+
+                tw.push(textWidth);
+                tg.push(t[i].dataset.gap);
+                ts.push(t[i].dataset.speed);
+                ta.push(mover);
+        }
+
+        let tickerAction = function() {
+                for(let j=0;j<ta.length;j++){
+                        let speed = parseInt(ts[j]);
+                        let gap = parseInt(tg[j]);
+                        let tw2 = tw[j];
+
+                        if (ta[j].leftPosition * -speed > tw2*speed) {
+                                ta[j].leftPosition = -speed;
+                        } else {
+                                ta[j].leftPosition -= speed;
+                        }
+
+                        ta[j].style.left = (-gap + ta[j].leftPosition) + "px";
+                }
+                window.requestAnimationFrame(tickerAction);
+        };
+        tickerAction();
+}
+</script>
+</body>
+<footer>
+	<section class="wrap column">
+		<div>
+			<h1>❋<br>BREEDING<br>PLANTS</h1>
+			<h2>© You min Heo<br>all rights reserved.</h2>
+		</div>
+	</section>
+</footer>
+</html>
